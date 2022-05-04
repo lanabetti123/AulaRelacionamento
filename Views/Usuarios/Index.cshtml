@@ -29,8 +29,10 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nome)
+
             </td>
             <td>
+                <a href="/Usuarios/MeusFavoritos/@item.Id">Meus Favoritos</a>
                 @Html.ActionLink("Editar", "Edit", new {  id=item.Id  }) |
                 @Html.ActionLink("Delete", "Delete", new {  id=item.Id })
             </td>
